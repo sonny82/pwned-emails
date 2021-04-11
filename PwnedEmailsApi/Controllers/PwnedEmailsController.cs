@@ -20,9 +20,12 @@ namespace PwnedEmailsApi.Controllers
         [HttpGet("{email}")]
         public async Task<IActionResult> Get(string email)
         {
+            if (!IsValidEmail(email)) return BadRequest($"Email address {email} is not valid");
             var result = await _clusterClient.GetGrain<IDomainGrain>(ExtractDomain(email))
                 .CheckEmailAddress(email);
-            return result ? (IActionResult) Ok($"Email address {email} has been pwned") : NotFound($"Email address {email} is not on the list of pwned email addresses");
+            return result
+                ? (IActionResult) Ok($"Email address {email} has been pwned")
+                : NotFound($"Email address {email} is not on the list of pwned email addresses");
         }
 
         [HttpPost("{email}")]
