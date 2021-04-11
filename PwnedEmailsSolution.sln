@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grains", "Grains\Grains.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwnedEmailsApi", "PwnedEmailsApi\PwnedEmailsApi.csproj", "{22014B41-1B5E-4CCB-A0A0-3EF4CD1316C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwnedEmailsTests", "PwnedEmailsTests\PwnedEmailsTests.csproj", "{77B3FAB5-D36F-4692-9EC0-33212182F2B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{22014B41-1B5E-4CCB-A0A0-3EF4CD1316C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22014B41-1B5E-4CCB-A0A0-3EF4CD1316C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22014B41-1B5E-4CCB-A0A0-3EF4CD1316C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B3FAB5-D36F-4692-9EC0-33212182F2B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B3FAB5-D36F-4692-9EC0-33212182F2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B3FAB5-D36F-4692-9EC0-33212182F2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B3FAB5-D36F-4692-9EC0-33212182F2B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

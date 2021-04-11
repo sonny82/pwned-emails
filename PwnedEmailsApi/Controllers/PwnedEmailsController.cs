@@ -30,11 +30,11 @@ namespace PwnedEmailsApi.Controllers
         /// <returns>
         /// </returns>
         /// <response code="200">If email has been found on the pwned emails list</response>
-        /// <response code="204">If email is not on the pwned emails list</response>
+        /// <response code="404">If email is not on the pwned emails list</response>
         /// <response code="400">If email is not valid</response>
         [HttpGet("{email}")]
         [ProducesResponseType(typeof(ResponseBody), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status204NoContent)]
+        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get(string email)
         {
@@ -49,8 +49,8 @@ namespace PwnedEmailsApi.Controllers
             return result
                 ? (IActionResult) Ok(ControllerHelper.CreateResponseBody(StatusCodes.Status200OK,
                     $"Email address {email} has been pwned"))
-                : NotFound(ControllerHelper.CreateResponseBody(StatusCodes.Status204NoContent,
-                    $"Email address {email} is not on the list of pwned email addresses"));
+                : NotFound(ControllerHelper.CreateResponseBody(StatusCodes.Status404NotFound,
+                    $"Email address {email} was not found on the list of pwned email addresses"));
         }
 
         /// <summary>

@@ -4,21 +4,21 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PwnedEmailsApi.Utils
 {
-    public class ControllerHelper
+    public static class ControllerHelper
     {
-        internal static ProblemDetails CreateProblemDetails(int status, string title, string instance) =>
-            new ProblemDetails
+        public static ProblemDetails CreateProblemDetails(int status, string title, string instance) =>
+            new()
             {
                 Status = status,
                 Title = title,
                 Instance = instance
             };
 
-        internal static string ExtractDomain(string email) => new MailAddress(email).Host;
+        public static string ExtractDomain(string email) => new MailAddress(email).Host;
 
-        internal static bool IsValidEmail(string email) => new EmailAddressAttribute().IsValid(email);
+        public static bool IsValidEmail(string email) => new EmailAddressAttribute().IsValid(email);
 
-        internal static ResponseBody CreateResponseBody(int statusCode, string message) =>
-            new ResponseBody(statusCode, message);
+        public static ResponseBody CreateResponseBody(int statusCode, string message) =>
+            new(statusCode, message);
     }
 }
