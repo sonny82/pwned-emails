@@ -28,13 +28,6 @@ namespace Grains
                 $"{DateTime.Now.ToString(CultureInfo.CurrentCulture)}: Grain {IdentityString} has been activated");
         }
 
-        public override async Task OnDeactivateAsync()
-        {
-            await base.OnDeactivateAsync();
-            _logger.Trace(
-                $"{DateTime.Now.ToString(CultureInfo.CurrentCulture)}: Grain {IdentityString} has been deactivated");
-        }
-
         public Task<bool> AddEmailAddress(string email)
         {
             _logger.Trace(
