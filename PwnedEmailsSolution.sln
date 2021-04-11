@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrainInterfaces", "GrainInterfaces\GrainInterfaces.csproj", "{1EB0600F-A475-487E-B4FE-1D35B7D6FEE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grains", "Grains\Grains.csproj", "{1DE4C95A-32F6-4065-A9E2-9A5D3B31D835}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EB0600F-A475-487E-B4FE-1D35B7D6FEE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB0600F-A475-487E-B4FE-1D35B7D6FEE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB0600F-A475-487E-B4FE-1D35B7D6FEE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB0600F-A475-487E-B4FE-1D35B7D6FEE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DE4C95A-32F6-4065-A9E2-9A5D3B31D835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE4C95A-32F6-4065-A9E2-9A5D3B31D835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE4C95A-32F6-4065-A9E2-9A5D3B31D835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE4C95A-32F6-4065-A9E2-9A5D3B31D835}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {656C07EF-6432-4506-8703-D41C38931D00}
+	EndGlobalSection
+EndGlobal
